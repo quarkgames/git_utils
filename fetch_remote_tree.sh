@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# fetch a specific file from a remote repo
-# example: git archive --format=tar --remote=ssh://git@bitbucket.org/quarkgames/qcore_user.git  master:priv/ qcore_user_api.proto | tar -x
+# fetch N subtrees from a remote repo
 if [[ "$#" -lt 4 ]]; then
     echo -e "invalid invocation: $@\n\n"
     echo -e "USAGE:"
